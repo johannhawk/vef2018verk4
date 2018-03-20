@@ -29,7 +29,7 @@ Notaðu SemanticUI https://semantic-ui.com/ umgjörð notendaviðmóts (e. css f
 Notaðu það sem SemanticUI hefur að bjóða til að gera verkefnið notendavænt (e. UX) og
 viðmótssvænt (e. UI).
 
-https://semantic-ui.com/introduction/getting-started.html
+https://semantic-ui.com/introduction/getting-started.html hlutir til að byrja með
 
 
 ### Námsmat og skil:
