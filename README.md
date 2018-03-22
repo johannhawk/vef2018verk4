@@ -9,6 +9,8 @@ samband).
 **Leikarar** vefsíðan á að innihalda upplýsingar um 4 leikara úr myndinni, mynd, nafn, helstu upplýsingar
 
 í grindar uppsetningu (e. grid layout) https://semantic-ui.com/collections/grid.html#/definition
+
+
 Þegar smellt er á persónu þá opnast spretti gluggi (e. module) með nánari upplýsingar.
 https://semantic-ui.com/modules/modal.html
 
