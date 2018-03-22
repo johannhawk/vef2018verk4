@@ -13258,8 +13258,8 @@ i.icon.star.empty:before {
 
 @font-face {
   font-family: 'brand-icons';
-  src: url("./themes/default/assets/fonts/brand-icons.eot");
-  src: url("./themes/default/assets/fonts/brand-icons.eot?#iefix") format('embedded-opentype'), url("./themes/default/assets/fonts/brand-icons.woff2") format('woff2'), url("./themes/default/assets/fonts/brand-icons.woff") format('woff'), url("./themes/default/assets/fonts/brand-icons.ttf") format('truetype'), url("./themes/default/assets/fonts/brand-icons.svg#icons") format('svg');
+  src: url("./assets/fonts/brand-icons.eot");
+  src: url("./assets/fonts/brand-icons.eot?#iefix") format('embedded-opentype'), url("./assets/fonts/brand-icons.woff2") format('woff2'), url("./assets/fonts/brand-icons.woff") format('woff'), url("./assets/fonts/brand-icons.ttf") format('truetype'), url("./assets/fonts/brand-icons.svg#icons") format('svg');
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
