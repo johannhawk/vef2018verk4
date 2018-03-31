@@ -20,7 +20,55 @@
   </div>
 </div>
 <hr>
-
-
+<form class="ui form segment error">
+  <div class="two fields">
+    <div class="field error">
+      <label>Nafn</label>
+      <input name="nafn" placeholder="Nafn" type="text">
+    </div>
+    <div class="field error">
+      <label>Netfang</label>
+      <input name="netfang" placeholder="Netfang" type="text">
+    </div>
+  </div>
+  <div class="field error">
+    <label>Fyrirspurn</label>
+    <textarea name="fyrirspurn" rows="2"></textarea>
+  </div>
+<div class="ui primary submit button">Submit</div>
+<div class="ui error message"><ul class="list"><li>Nafn Vantar</li><li>Verdur ad vera netfang</li><li>Fyrirspyrn vantar</li></ul></div>
+</form>
+<script type="text/javascript">
+$('.ui.form')
+  .form({
+    fields: {
+      nafn: {
+        rules: [
+          {
+            type   : 'empty'
+          }
+        ]
+      },
+      netfang: {
+        identifier  : 'email',
+        rules: [
+          {
+            type   : 'exactly[dog]',
+            prompt : '{name} is set to "{value}" that is totally wrong. It should be {ruleValue}'
+          }
+        ]
+      },
+      fyrirspurn: {
+        rules: [
+          {
+            type   : 'empty'
+            }
+          }
+        ]
+      },
+    }
+  })
+;  
+</script>
 </body>
 </html>
