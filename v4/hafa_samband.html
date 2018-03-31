@@ -36,16 +36,18 @@
     <textarea name="fyrirspurn" rows="2"></textarea>
   </div>
 <div class="ui primary submit button">Submit</div>
-<div class="ui error message"><ul class="list"><li>Nafn Vantar</li><li>Verdur ad vera netfang</li><li>Fyrirspyrn vantar</li></ul></div>
+<div class="ui error message"><ul class="list"><li>Sladu inn 4 til 16 stafa nafn</li><li>Sladu inn almennilegt email</li><li>Sladu inn 100 eda faerri stafi</li></ul></div>
 </form>
 <script type="text/javascript">
 $('.ui.form')
   .form({
     fields: {
       nafn: {
+        identifier  :'regex',
         rules: [
           {
-            type   : 'empty'
+            type   : 'regExp[/^[a-z0-9_-]{4,16}$/]',
+            prompt : 'Sladu inn 4 til 16 stafa nafn'
           }
         ]
       },
@@ -53,15 +55,17 @@ $('.ui.form')
         identifier  : 'email',
         rules: [
           {
-            type   : 'exactly[dog]',
-            prompt : '{name} is set to "{value}" that is totally wrong. It should be {ruleValue}'
+            type   : 'email',
+            prompt : 'Sladu inn almennilegt email'
           }
         ]
       },
       fyrirspurn: {
+        identifier  : 'maxlength',
         rules: [
           {
-            type   : 'empty'
+            type   : 'maxLength[100]',
+            prompt : 'Sladu inn 100 eda faerri stafi'
             }
           }
         ]
