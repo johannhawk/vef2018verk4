@@ -4,7 +4,11 @@
 	<title>Leikarar</title>
 	<link rel="stylesheet" type="text/css" href="semantic.css">
 
-	<script type="text/javascript" src="semantic.min.js"></script>
+	<script type="text/javascript" src="semantic.min.js">
+  $('.ui.modal')
+  .modal('show')
+  ;
+  </script>
 </head>
 <body>
 <h1> Leikarar </h1>
@@ -64,12 +68,9 @@ He won the Academy Award for Best Supporting Actor for Iris and the BAFTA Award 
   </div>
 </div>
 
-<!-Hvert fer þetta? eða hvað þarf ég að gera til að láta modal virka?->
-<script type="text/javascript">
-$('.ui.modal')
-  .modal('show')
-;
-</script>
+<!-Hvert fer þetta? eða hvað þarf ég að gera til að láta modal virka? Liklega script vandamal->
+
+<button class="ui button orange create_btn" type="button">Prufa Modal</button>
 <div class="ui modal">
   <i class="close icon"></i>
   <div class="image content">
